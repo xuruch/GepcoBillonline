@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gepco Bill </string>
+    <string name="show_bill">SHow Bill</string>
+    <string name="note_some_of_the_reference_numbers_have_been_revised_so_please_enter_your_14_digit_reference_number_as_mentioned_on_your_printed_electricty_bill_reference_no_like_99999999999999">Note:- Some Of The Reference Numbers Have Been Revised So Please Enter your 14 Digit Reference Number As Mentioned On Your Printed Electricty Bill. Reference No like(99999999999999).</string>
+    <string name="please_enter_your_14_digit_numeric_reference_number_no_spaces">Please Enter Your 14 digit Numeric Reference Number (no spaces)</string>
+    <string name="clear">Clear</string>
+</resources>

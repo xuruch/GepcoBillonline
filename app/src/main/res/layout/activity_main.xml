@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/gepcobillogofull"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/imagegepco"
+        />
+    <TextView
+        android:id="@+id/textnospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#2EAACA"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/please_enter_your_14_digit_numeric_reference_number_no_spaces"
+        android:layout_below="@id/imagegepco"
+        />
+    <TextView
+        android:layout_below="@id/textnospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#374EC1"
+        android:id="@+id/text999"
+        android:text="@string/note_some_of_the_reference_numbers_have_been_revised_so_please_enter_your_14_digit_reference_number_as_mentioned_on_your_printed_electricty_bill_reference_no_like_99999999999999"
+        android:textStyle="bold"
+
+        android:fontFamily="sans-serif-condensed-medium"
+
+        />
+
+    <EditText
+        android:inputType="number"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="300dp"
+        android:textColor="#000"
+        android:layout_height="50dp"
+        android:id="@+id/billrefnum"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text999"
+        android:layout_marginTop="20dp"
+
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/billrefnum">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_bill"
+            android:id="@+id/btnshowbill"
+            android:layout_marginStart="50dp"
+            />
+        <Button
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/btnclearbtn"
+            />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6500396294030647/2321071306">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
